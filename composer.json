@@ -1,0 +1,19 @@
+{
+    "name": "practica/tests",
+    "description": "Esto es una practica",
+    "license": "MTI",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Programador-Luis",
+            "email": "redes.luisgonzalez@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.3"
+    }
+}
