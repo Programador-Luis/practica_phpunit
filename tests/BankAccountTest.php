@@ -1,33 +1,33 @@
 <?php
 
-require 'vendor/autoload.php';
+namespace practicas;
 
 use PHPUnit\Framework\TestCase;
 
 
 class BankAccountTest extends TestCase
 {
-    public function testHolder()
+    public function testHolder(): void
     {
         $account = new BankAccount('Luis', 10);
         $this->assertEquals('Luis', $account->holder());
     }
 
-    public function testDeposit()
+    public function testDeposit(): void
     {
         $account = new BankAccount('Luis', 10);
         $account->deposit(40);
         $this->assertEquals(50, $account->showBalance());
     }
 
-    public function testWithdraw()
+    public function testWithdraw(): void
     {
         $account = new BankAccount('Luis', 50);
         $account->withdraw(20);
         $this->assertEquals(30, $account->showBalance());
     }
 
-    public function testWithdrawMoreThanBalance()
+    public function testWithdrawMoreThanBalance(): void
     {
         $account = new BankAccount('Luis', 10);
         $account->withdraw(20);

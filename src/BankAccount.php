@@ -1,5 +1,6 @@
 <?php
 
+namespace practicas;
 class BankAccount {
 
     private $holder;
@@ -53,11 +54,3 @@ class BankAccount {
 
 
 }
-
-// $bank = new BankAccount('Luis', 10);
-
-// echo "El títular de la cuenta es: " . $bank->holder() . "</br>";
-
-// $bank->deposit(40);
-
-// echo "Saldo actual: " . $bank->showBalance() . "</br>";

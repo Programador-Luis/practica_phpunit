@@ -16,7 +16,7 @@ class Product{
     }
 
 
-    public function applyDiscount($percent)
+    public function applyDiscount($percent): float
     {
         $mount = $this->price * ($percent / 100);
 
@@ -26,7 +26,7 @@ class Product{
     }
 
 
-    public function showInfo()
+    public function showInfo(): string
     {
         return "{$this->name} tiene un costo de {$this->applyDiscount(50)}";
     }
@@ -34,9 +34,3 @@ class Product{
 
 
 }
-
-$cocacola = new Product('Coca Cola', 100);
-
-echo "{$cocacola->showInfo()}";
-
-

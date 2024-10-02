@@ -16,12 +16,12 @@ class Rectangle{
         $this->high = $high;
     }
 
-    public function calculateArea()
+    public function calculateArea(): float
     {
         return $this->broad * $this->high;
     }
 
-    public function calculatePerimeter()
+    public function calculatePerimeter(): float
     {
         return 2 * ($this->broad + $this->high);
     }
@@ -30,9 +30,3 @@ class Rectangle{
 
 
 }
-
-// $calculation = new Rectangle(10, 5);
-
-// echo "<h3> El área de tu rectángulo es: {$calculation->calculateArea()} </h3>";
-
-// echo "<h3> El perímetro de tu rectángulo es: {$calculation->calculatePerimeter()} </h3>";

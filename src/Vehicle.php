@@ -46,14 +46,3 @@ class Vehicle{
     }
 
 }
-
-
-
-// $auto = new Vehicle('Toyota', 'Volador', 110.5);
-
-// echo "Estás manejando un {$auto->autoFull()} </br>";
-
-// $auto->curb(80);
-
-// echo "La velocidad final es de: " . $auto->finalSpeed();
-
