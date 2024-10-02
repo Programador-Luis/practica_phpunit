@@ -1,6 +1,7 @@
 <?php
 
 namespace Practicas\Tests;
+
 class Library{
 
 
@@ -31,24 +32,28 @@ class Library{
         return $this->available;
     }
 
-    public function return(): void
+    public function returnBook(): bool
     {
+
         $this->available = true;
-    }
 
-    public function isAvailable(): string
-    {
         return $this->available;
+
     }
 
-    public function book($title): string
+    public function isAvailable(): bool
     {
-        return $this->title = $title;
+
+        return $this->available;
+
     }
 
+    public function getTitle(): string
+    {
 
+        return $this->title;
 
-
+    }
 
 }
 

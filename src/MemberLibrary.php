@@ -3,7 +3,9 @@
 
 use Practicas\Tests\Library;
 
-class MemberLibrary extends Library{
+require 'src/Library.php';
+
+class MemberLibrary {
 
     private $name;
     private $booksBorrowed;
@@ -14,6 +16,7 @@ class MemberLibrary extends Library{
     ){
 
         $this->name = $name;
+        $this->booksBorrowed = [];
 
     }
 
@@ -22,12 +25,28 @@ class MemberLibrary extends Library{
         if ($book->isAvailable()) {
 
             $book->lend();
-            $this->booksBorrowed = $book;
+            $this->booksBorrowed[] = $book;
         } else {
             return "Está prestado";
         }
     }
 
+    public function returnBook(Library $book): void
+    {
+        foreach ($this->booksBorrowed as $key => $bookBorrowed ) {
+            if ($bookBorrowed->getTitle() === $book->getTitle()) {
+                $book->returnBook();
+                unset($this->booksBorrowed[$key]);
+                break;
+            }
+        }
+    }
 
+    public function listBorrowedBooks() {
+        $title = array_map(function($book) {
+            return $book->getTitle();
+        }, $this->booksBorrowed);
+
+    }
 
 }
