@@ -16,6 +16,6 @@ class AnimalTest extends TestCase
     public function testCat(): void
     {
         $cat = new Cat();
-        $this->assertEquals("Meow Meow", $cat->sound());
+        $this->assertEquals("Miau Miau", $cat->sound());
     }
 }

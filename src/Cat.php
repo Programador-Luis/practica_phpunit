@@ -6,6 +6,6 @@ class Cat extends Animal
 {
     public function sound()
     {
-        return "Meow Meow";
+        return "Miau Miau";
     }
 }
