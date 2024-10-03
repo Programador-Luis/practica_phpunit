@@ -33,6 +33,5 @@ class Person
         } else {
             return 'Es mayor';
         }
-        
     }
 }
