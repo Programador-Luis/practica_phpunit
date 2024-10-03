@@ -25,7 +25,7 @@ class Person
         return 'Mi nombre completo es: ' . $this->name . ' ' . $this->lastName;
     }
 
-    public function isOlderOfAge()
+    public function isOlderOfAge(): string
     {
         if ($this->age < 18) {
             return 'No es mayor';

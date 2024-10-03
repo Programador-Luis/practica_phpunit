@@ -1,11 +1,13 @@
 
 <?php
 
+use Practicas\Tests\Employee;
 use Practicas\Tests\Person;
 
 use PHPUnit\Framework\TestCase;
 
-class PersonTest extends TestCase {
+class PersonTest extends TestCase
+{
 
     public function testFullname()
     {
@@ -17,6 +19,11 @@ class PersonTest extends TestCase {
     {
         $person = new Person("Juan", "Perez", 17);
         $this->assertEquals("No es mayor", $person->isOlderOfAge());
+    }
 
+    public function testgetAnnualSalary(): void
+    {
+        $salary = new Employee(10);
+        $this->assertEquals(120, $salary->getAnnualSalary());
     }
 }
