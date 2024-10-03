@@ -1,6 +1,6 @@
 <?php
 
-namespace Practicas\Tests;
+namespace practicas\tests;
 class BankAccount {
 
     private $holder;

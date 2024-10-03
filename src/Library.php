@@ -1,7 +1,6 @@
 <?php
 
-namespace Practicas\Tests;
-
+namespace practicas\tests;
 class Library{
 
 

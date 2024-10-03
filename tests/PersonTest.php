@@ -1,8 +1,9 @@
 
 <?php
 
-use Practicas\Tests\Employee;
-use Practicas\Tests\Person;
+use practicas\tests\Employee;
+use practicas\tests\Manager;
+use practicas\tests\Person;
 
 use PHPUnit\Framework\TestCase;
 
@@ -23,7 +24,13 @@ class PersonTest extends TestCase
 
     public function testgetAnnualSalary(): void
     {
-        $salary = new Employee(10);
-        $this->assertEquals(120, $salary->getAnnualSalary());
+        $salary = new Employee("Juan", "Perez", 20, 100);
+        $this->assertEquals(1200, $salary->annualSalary());
+    }
+
+    public function testAddBonus(): void
+    {
+        $bonus = new Manager("Juan", "Perez", 20, 100, 10);
+        $this->assertEquals(1210, $bonus->addBonus());
     }
 }

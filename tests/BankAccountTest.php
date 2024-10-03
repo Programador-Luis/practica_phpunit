@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Practicas\Tests\BankAccount;
+use practicas\tests\BankAccount;
 
 
 class BankAccountTest extends TestCase

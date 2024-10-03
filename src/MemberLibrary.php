@@ -1,9 +1,7 @@
 <?php
 
 
-use Practicas\Tests\Library;
-
-require 'src/Library.php';
+namespace practicas\tests;
 
 class MemberLibrary {
 

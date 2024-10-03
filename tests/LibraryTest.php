@@ -1,7 +1,6 @@
 <?php
 
-namespace Practicas\Tests;
-
+namespace practicas\tests;
 use PHPUnit\Framework\TestCase;
 
 class LibraryTest extends TestCase {

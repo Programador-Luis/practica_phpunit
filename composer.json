@@ -1,10 +1,10 @@
 {
-    "name": "practica/tests",
+    "name": "practicas/tests",
     "description": "Esto es una practica",
     "license": "MTI",
     "autoload": {
         "psr-4": {
-            "Practicas\\Tests\\": "src/"
+            "practicas\\tests\\": "src/"
         }
     },
     "authors": [
