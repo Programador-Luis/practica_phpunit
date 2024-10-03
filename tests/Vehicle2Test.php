@@ -1,7 +1,7 @@
 <?php
 
-use pruebas\tests\Car;
-use pruebas\tests\Bicycle;
+use practicas\tests\Car;
+use practicas\tests\Bicycle;
 use PHPUnit\Framework\TestCase;
 
 
