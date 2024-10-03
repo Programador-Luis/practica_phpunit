@@ -2,10 +2,20 @@
 
 namespace practicas\tests;
 
-class Car extends Vehicle2
+class Car extends Vehicle
 {
-    public function move(): string
-    {
-        return "El coche se está moviendo wey";
+    private $numberDoor;
+
+    public function __construct(
+        string $brand,
+        string $model,
+        float $speed,
+        string $transmissionType,
+        int $numberDoor
+    ){
+
+        parent::__construct($brand, $model,$speed, $transmissionType);
+        $this->numberDoor = $numberDoor;
+
     }
 }

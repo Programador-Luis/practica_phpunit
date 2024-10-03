@@ -1,48 +1,50 @@
 <?php
 
-class Vehicle{
+namespace practicas\tests;
+
+class Vehicle
+{
 
     private $brand;
     private $model;
     private $speed;
+    private $transmissionType;
 
     public function __construct(
         string $brand,
         string $model,
         float $speed,
-    )
-    {
+        string $transmissionType
+    ) {
         $this->brand = $brand;
         $this->model = $model;
-        $this->speed = $speed;
+        $this->speed = 10;
+        $this->transmissionType = $transmissionType;
     }
+
+
 
     public function accelerate($amount): void
     {
-        if($amount > 0) {
+        if ($amount > 0) {
             $this->speed += $amount;
-
         }
     }
-
 
     public function curb($amount): void
     {
-        if($amount > 0 && $amount <= $this->speed) {
+        if ($amount > 0 && $amount <= $this->speed) {
             $this->speed -= $amount;
-            
         }
     }
 
-
-    public function finalSpeed(): int
+    public function getSpeed(): float
     {
         return $this->speed;
     }
 
-    public function autoFull(): string
+    public function getTransmissionType(): string
     {
-        return "{$this->brand} del modelo {$this->model}";
+        return $this->transmissionType;
     }
-
 }
